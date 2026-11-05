@@ -64,4 +64,5 @@ type Logger interface {
 	WithError(err error) *AppLogger
 	WithField(key string, value any) *AppLogger
 	WithContextFields(ctx context.Context) *AppLogger
+	GetLogger(name string) Logger
 }
